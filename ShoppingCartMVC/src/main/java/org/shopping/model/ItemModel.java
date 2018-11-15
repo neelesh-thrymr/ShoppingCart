@@ -1,6 +1,8 @@
 package org.shopping.model;
 
-public class ItemModel {
+import java.io.Serializable;
+
+public class ItemModel implements Serializable{
 
 	private int id;
 	private String iname;

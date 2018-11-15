@@ -3,7 +3,6 @@ package org.shopping.controller;
 
 import javax.servlet.http.HttpSession;
 
-import org.shopping.model.ItemModel;
 import org.shopping.service.ShoppingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

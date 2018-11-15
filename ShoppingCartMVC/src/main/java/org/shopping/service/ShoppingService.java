@@ -98,7 +98,7 @@ private static boolean  ACTIVE=true;
 public String showItems(Model m,HttpSession hs) {
 	if(ShoppingService.ACTIVE==false) 
 	{
-		hs.setAttribute("titem",null);
+		hs.removeAttribute("titem");
 		m.addAttribute("msg","Please LoginFirst");
 		return "itemlist";
 	}
@@ -133,7 +133,6 @@ public String cshowItems(Model m,HttpSession hs) {
 		sst.setComplete();
 		session.removeAttribute("user");
 		ShoppingService.ACTIVE=false;
-		
 		m.addAttribute("u",new UserModel());
 		return "loginform";
 	}

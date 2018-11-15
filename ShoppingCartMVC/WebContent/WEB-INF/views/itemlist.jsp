@@ -20,11 +20,10 @@
 <table roles="all" frame="box"   align="center" cellspacing="10px"cellpadding="12px" align="center">
 <tr>
 <th>Id</th><th>Item Name</th><th>Price</th><th>Quantity</th></tr>
-<h2>${msg}</h2>
-
 <c:forEach items="${titem}" var="itm">
 <tr><td>${itm.getId()}</td><td>${itm.getIname()}</td><td>${itm.getPrice()}</td><td>${itm.getQty()}</td></tr>
 </c:forEach>
+
 </table>
 </body>
 </html>
