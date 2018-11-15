@@ -13,7 +13,7 @@
 <div>
 
 <a href="ahome">HOME</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="items">SHOW ITEMS</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="additems">ADD ITEMS</a>
-&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="ditems">DELETE ITEMS</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="loginforms">LOGOUT</a>
+&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="ditems">DELETE ITEMS</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="aloginforms">LOGOUT</a>
 </div><br><br>
 <h2><span>New Item Registration</span></h2>
 

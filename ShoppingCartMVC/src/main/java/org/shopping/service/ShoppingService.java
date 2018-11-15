@@ -8,15 +8,14 @@ import org.shopping.model.ItemModel;
 import org.shopping.model.UserModel;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttributes;
+
 import org.springframework.web.bind.support.SessionStatus;
 
 @Service
 
 public class ShoppingService {
 
-
+private static boolean  ACTIVE=true;
 		List<ItemModel> item=new ArrayList<ItemModel>();
 		
 		public String show() {
@@ -71,6 +70,7 @@ public class ShoppingService {
 		um.setEmail(umm.getEmail());
 		um.setPassword(umm.getPassword());
 		um.setAddress(umm.getAddress());
+		ShoppingService.ACTIVE=true;
 		m.addAttribute("user",um);
 		m.addAttribute("u",new UserModel());
 		return "loginform";
@@ -96,9 +96,13 @@ public class ShoppingService {
 	}
 
 public String showItems(Model m,HttpSession hs) {
-	
-	List<ItemModel> lst=(ArrayList<ItemModel>)hs.getAttribute("imodel");
-	m.addAttribute("titem",lst);
+	if(ShoppingService.ACTIVE==false) 
+	{
+		hs.setAttribute("titem",null);
+		m.addAttribute("msg","Please LoginFirst");
+		return "itemlist";
+	}
+	m.addAttribute("titem",hs.getAttribute("imodel"));
 		return "itemlist";
 		
 	}
@@ -128,7 +132,8 @@ public String cshowItems(Model m,HttpSession hs) {
 	public String logForm(Model m, HttpSession session, SessionStatus sst) {
 		sst.setComplete();
 		session.removeAttribute("user");
-		m.addAttribute("titem",new ArrayList<ItemModel>());
+		ShoppingService.ACTIVE=false;
+		
 		m.addAttribute("u",new UserModel());
 		return "loginform";
 	}
