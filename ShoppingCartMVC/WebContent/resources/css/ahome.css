@@ -1,0 +1,22 @@
+@charset "UTF-8";
+div{
+	background-color: maroon;
+	height:100px;
+	text-align:right;
+	color:maroon;
+}
+body{
+background-color: smoke;
+}
+a,span{
+position:relative;
+top:40px;
+text-align:right;
+right:150px;
+text-decoration: none;
+color:white;
+font-weight:bold;
+}
+a:hover{
+color:blue;
+}
