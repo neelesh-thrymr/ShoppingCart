@@ -21,10 +21,10 @@
 
 <table roles="all" frame="box"   align="center" cellspacing="10px"cellpadding="12px">
 <tr>
-<td>Id</td><td>:</td><td><form:input path="id"/></td></tr>
-<tr><td>Item Name</td><td>:</td><td><form:input path="iname"/></td></tr>
-<tr><td>Price</td><td>:</td><td><form:input path="price"/></td></tr>
-<tr><td>Quantity</td><td>:</td><td><form:input path="qty"/></td></tr>
+<td>Id</td><td>:</td><td><form:input path="id" required="true"/></td></tr>
+<tr><td>Item Name</td><td>:</td><td><form:input path="iname" required="true"/></td></tr>
+<tr><td>Price</td><td>:</td><td><form:input path="price" required="true"/></td></tr>
+<tr><td>Quantity</td><td>:</td><td><form:input path="qty" required="true"/></td></tr>
 <tr><td colspan="3">
 <form:button type="submit">Submit</form:button></td></tr>
 </table>

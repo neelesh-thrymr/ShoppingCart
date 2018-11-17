@@ -10,9 +10,9 @@
 </head>
 <body>
 <div>
-
 <a href="userhome">HOME</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="profile">PROFILE</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="totalitems">ITEMS LIST</a>
 &nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="citems">CART ITEMS</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="uloginforms">LOGOUT</a>
+&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="del">DELETE ACCOUNT</a>
 </div>
 <br><br>
 

@@ -17,21 +17,21 @@ alert(em.value);
 </script>
 <link href="<c:url value="resources/css/login.css"/> " rel="stylesheet"/>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User Login</title>
 </head>
 <body>
 
-<h2><span>User LogIn => ${user.getName()}</span></h2><br><br>
+<h2><span>User LogIn</span></h2><br><br>
 <form:form action="login" method="post" modelAttribute="u" align="center"><br>
 <table roles="all" frame="box" align="center" cellspacing="10px"cellpadding="12px">
 <tr>
 
-<tr><td>Email</td><td>:</td><td><form:input path="email" id="emal" placeholder="ex: john@gmail.com"/></td></tr>
-<tr><td>password</td><td>:</td><td><form:password path="password" id="pswd" placeholder="minimum 8 character"/></td></tr>
+<tr><td>Email</td><td>:</td><td><form:input path="email" id="emal" placeholder="ex: john@gmail.com" required="true"/></td></tr>
+<tr><td>password</td><td>:</td><td><form:password path="password" id="pswd" placeholder="minimum 8 character" required="true"/></td></tr>
 <tr><td colspan="3">
 <form:button type="submit" onclick="valid()">LOG IN</form:button><br><br><a href="newusers">New User ?</a></td></tr>
 </table>
 </form:form>
-
+<h3 align="center">${msg}</h3>
 </body>
 </html>
